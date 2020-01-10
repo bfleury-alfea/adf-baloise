@@ -1,0 +1,27 @@
+<div class="dw-template-container">
+  <div class="dashboard">
+    <button class="dashboard-button dashboard-category dashboard-button-s12" mat-raised-button>
+      <span class="h2 dashboard-label">Process 1</span>
+    </button>
+
+    <button (click)="navigateTo('process-list')" class="dashboard-button dashboard-button-s3" mat-raised-button>
+      <span class="h2 dashboard-label">Instances</span>
+      <span class="h1 dashboard-counter">{{counter.process1_instances}}</span>
+    </button>
+
+    <button class="dashboard-button dashboard-button-s3" mat-raised-button>
+      <span class="h2 dashboard-label">Task 1</span>
+      <span class="h1 dashboard-counter">{{counter.process1_task1}}</span>
+    </button>
+
+    <button class="dashboard-button dashboard-button-s3" mat-raised-button>
+      <span class="h2 dashboard-label">Task 2</span>
+      <span class="h1 dashboard-counter">{{counter.process1_task2}}</span>
+    </button>
+
+    <button class="dashboard-button dashboard-button-s3" mat-raised-button>
+      <span class="h2 dashboard-label">Task 3</span>
+      <span class="h1 dashboard-counter">{{counter.process1_task3}}</span>
+    </button>
+  </div>
+</div>

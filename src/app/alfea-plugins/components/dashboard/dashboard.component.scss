@@ -1,0 +1,112 @@
+$colors: lightgray, #CE97C0, #B269A0, #CE97C0, #B269A0,
+lightgray, #F3B2BE, #E28595, #F3B2BE, #E28595, #F3B2BE, #E28595,
+lightgray, #BAE5A8, #93CF7A,
+lightgray, #54CACA, #7FE0E0, #54CACA;
+
+$dashboard-size: 100%;
+
+@for $i from 1 through length($colors) {
+  .dashboard-button:nth-child(#{length($colors)}n+#{$i}) {
+    background-color: nth($colors, $i);
+  }
+}
+
+.dashboard {
+  margin: 0 50px;
+}
+
+.dashboard-button {
+  height: 150px;
+  margin: 5px;
+}
+
+.dashboard-button h1,
+.dashboard-button h2,
+.dashboard-button h3 {
+  margin: 5px;
+}
+
+.dashboard-category {
+  height: 50px;
+  margin: 5px;
+}
+
+.dashboard-label {
+  height: 20px;
+}
+
+.dashboard-title {
+  height: 85px;
+}
+
+.dashboard-counter {
+
+}
+
+.dashboard-button-s1 {
+  width: calc(#{$dashboard-size} * 1 / 12 - 10px);
+}
+
+.dashboard-button-s2 {
+  width: calc(#{$dashboard-size} * 2 / 12 - 10px);
+}
+
+.dashboard-button-s3 {
+  width: calc(#{$dashboard-size} * 3 / 12 - 10px);
+}
+
+.dashboard-button-s4 {
+  width: calc(#{$dashboard-size} * 4 / 12 - 10px);
+}
+
+.dashboard-button-s5 {
+  width: calc(#{$dashboard-size} * 5 / 12 - 10px);
+}
+
+.dashboard-button-s6 {
+  width: calc(#{$dashboard-size} * 6 / 12 - 10px);
+}
+
+.dashboard-button-s7 {
+  width: calc(#{$dashboard-size} * 7 / 12 - 10px);
+}
+
+.dashboard-button-s8 {
+  width: calc(#{$dashboard-size} * 8 / 12 - 10px);
+}
+
+.dashboard-button-s9 {
+  width: calc(#{$dashboard-size} * 9 / 12 - 10px);
+}
+
+.dashboard-button-s10 {
+  width: calc(#{$dashboard-size} * 10 / 12 - 10px);
+}
+
+.dashboard-button-s11 {
+  width: calc(#{$dashboard-size} * 11 / 12 - 10px);
+}
+
+.dashboard-button-s12 {
+  width: calc(#{$dashboard-size} * 12 / 12 - 10px);
+}
+
+.h1,
+.h2 {
+  display: block;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+.h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+}
+
+.h2 {
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+}

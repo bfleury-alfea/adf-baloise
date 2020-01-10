@@ -1,0 +1,9 @@
+<div class="dw-template-container">
+
+  <adf-datatable
+    (rowClick)="onRowClick($event)"
+    [data]="dataProcesses"
+    [stickyHeader]="true"
+  ></adf-datatable></div>
+
+<div *ngIf="is_manager">Je suis manager</div>
